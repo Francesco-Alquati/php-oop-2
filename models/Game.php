@@ -14,5 +14,8 @@
         public function getMaterial(){
             return $this->material;
         }
+        public function getClassName(){
+            return get_class();
+        }
     }
 ?>

@@ -22,11 +22,12 @@
         <div class="row">
             <?php foreach($products as $product){ ?>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <div class="text-white text-center card-bg rounded mt-4">
+                    <div class="text-white text-center card-bg rounded mt-4 p-1">
                         <img src="<?php echo $product->image; ?>" alt="<?php echo $product->name; ?>">
                         <div class="mt-2">
-                            <h5 class="mb-3"><?php echo $product->name; ?></h5>
-                            <p class="text-warning"><strong>Categoria: </strong><i class="<?php echo $product->category->icon; ?>"></i></p>
+                            <h4 class="mb-3 text-uppercase"><?php echo $product->name; ?></h4>
+                            <h5 class="text-warning mb-3"><strong>Categoria: </strong><i class="<?php echo $product->category->icon; ?>"></i></h5>
+                            <p>Tipo di prodotto: <span class="text-uppercase text-info"> <?php echo $product->getClassName(); ?> </span></p>
                             <p><?php echo $product->getProductInfo(); ?></p>
                         </div>
                     </div>
