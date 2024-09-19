@@ -17,7 +17,7 @@
         }
     
         public function getProductInfo() {
-            return "Nome: ".$this->name.", Prezzo:".$this->price;
+            return "Prezzo: ".$this->price."€";
         }
     }
     
