@@ -17,8 +17,18 @@
         }
     
         public function getProductInfo() {
-            return "Prezzo: ".$this->price."€";
+            $string = "Prezzo: "."<span class='text-green'>$this->price €</span>";
+
+            if($this->is_available){
+                $string.= "<br> Quantità in magazzino: "."<span class='text-red'>$this->quantity</span>";
+            }
+            else{
+                $string.= " Prodotto non disponibile";
+            }
+            return $string;
+
         }
+
     }
     
 ?>

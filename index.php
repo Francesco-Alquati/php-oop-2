@@ -22,7 +22,7 @@
         <div class="row">
             <?php foreach($products as $product){ ?>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <div class="text-white text-center card-bg rounded ms-4 mt-4">
+                    <div class="text-white text-center card-bg rounded mt-4">
                         <img src="<?php echo $product->image; ?>" alt="<?php echo $product->name; ?>">
                         <div class="mt-2">
                             <h5 class="mb-3"><?php echo $product->name; ?></h5>

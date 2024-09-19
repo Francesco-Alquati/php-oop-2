@@ -16,3 +16,9 @@ img{
     background: rgb(0,96,84);
     background: linear-gradient(90deg, rgba(0,96,84,1) 0%, rgba(0,1,93,1) 50%, rgba(21,97,98,1) 100%);
 }
+.text-green{
+    color: rgb(0, 255, 0);
+}
+.text-red{
+    color: red;
+}
