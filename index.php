@@ -20,6 +20,11 @@
             </div>
         </div>
         <div class="row">
+            <?php if(isset($error_product)){ ?>
+                <div class="alert alert-danger" role="alert">
+                <?php echo $error_product; ?>
+                </div>
+            <?php } ?>
             <?php foreach($products as $product){ ?>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="text-white text-center card-bg rounded mt-4 p-1">

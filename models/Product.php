@@ -8,6 +8,10 @@
         public $is_available;
     
         function __construct( $_name, $_quantity, $_price, $_image, Category $_category, $_is_available) {
+            if(!is_numeric($_price)){
+                throw new Exception('Il prezzo di "'.$_name.'" deve essere un valore numerico!');
+            }
+
             $this->name = $_name;
             $this->quantity = $_quantity;
             $this->price = $_price;
